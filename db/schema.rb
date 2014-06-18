@@ -48,7 +48,8 @@ ActiveRecord::Schema.define(version: 20140618150221) do
   add_index "transactions", ["transaction_type_id"], name: "index_transactions_on_transaction_type_id", using: :btree
 
   create_table "users", force: true do |t|
-    t.string   "email",      limit: 55, null: false
+    t.string   "email",               limit: 55,  null: false
+    t.string   "system_access_token", limit: 140, null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end

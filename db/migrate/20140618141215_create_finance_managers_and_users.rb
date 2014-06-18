@@ -2,6 +2,7 @@ class CreateFinanceManagersAndUsers < ActiveRecord::Migration
   def change
     create_table :users do |t|
       t.string :email, limit: 55, unique: true, null: false
+      t.string :system_access_token, limit: 140, unique: true, null: false
 
       t.timestamps
     end
