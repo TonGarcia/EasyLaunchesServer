@@ -1,3 +1,3 @@
 class Audit < ActiveRecord::Base
-  belongs_to :transacao
+  belongs_to :transaction
 end
