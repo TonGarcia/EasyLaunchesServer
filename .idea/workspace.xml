@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6d2bb59-61bd-4125-bbb6-6a47ea89cbcf" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/operation_type.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20140618150239_create_operation_types.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/factories/operation_types.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/models/operation_type_spec.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/category.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20140618153503_create_categories.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/factories/categories.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/models/category_spec.rb" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modelagens/en_MER_EasyLaunches.mwb.bak" afterPath="$PROJECT_DIR$/modelagens/en_MER_EasyLaunches.mwb.bak" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modelagens/en_MER_EasyLaunches.mwb" afterPath="$PROJECT_DIR$/modelagens/en_MER_EasyLaunches.mwb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20140618141215_create_finance_managers_and_users.rb" afterPath="$PROJECT_DIR$/db/migrate/20140618141215_create_finance_managers_and_users.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
     </list>
     <ignored path="EasyLaunchesServer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,21 +54,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="seeds.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="seeds.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/db/seeds.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
-              <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20140618153503_create_categories.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20140618153503_create_categories.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.1331361" vertical-offset="0" max-vertical-offset="676">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.6213018" vertical-offset="0" max-vertical-offset="676">
+              <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -104,9 +93,9 @@
         <option value="$PROJECT_DIR$/db/migrate/20140618144652_create_transactions.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20140618150221_create_transaction_types.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20140618150239_create_operation_types.rb" />
-        <option value="$PROJECT_DIR$/db/seeds.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20140618141215_create_finance_managers_and_users.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20140618153503_create_categories.rb" />
+        <option value="$PROJECT_DIR$/db/seeds.rb" />
       </list>
     </option>
   </component>
@@ -562,14 +551,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
-          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140618150221_create_transaction_types.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
@@ -578,10 +559,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140618153503_create_categories.rb">
+    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1331361" vertical-offset="0" max-vertical-offset="676">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.6213018" vertical-offset="0" max-vertical-offset="676">
+          <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
           <folding />
         </state>
       </provider>

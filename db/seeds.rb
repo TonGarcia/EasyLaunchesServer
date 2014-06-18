@@ -27,14 +27,3 @@ puts 'TransactionTypes inserting'.colorize(:light_blue)
   puts "\t #{expense.name} - #{expense.to_s}".colorize(:light_green)
 puts 'TransactionTypes inserted'.colorize(:light_blue)
 # /TransactionTypes
-
-
-
-# OperationTypes
-puts 'OperationTypes inserting'.colorize(:light_blue)
-  income = OperationType.find_or_create_by(name: 'Debit')
-  puts "\t #{income.name} - #{income.to_s}".colorize(:light_green)
-  expense = OperationType.find_or_create_by(name: 'Credit')
-  puts "\t #{expense.name} - #{expense.to_s}".colorize(:light_green)
-puts 'OperationTypes inserted'.colorize(:light_blue)
-# /OperationTypes
