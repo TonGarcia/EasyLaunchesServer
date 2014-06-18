@@ -11,6 +11,54 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20140618150239) do
+
+  create_table "finance_manager_sessions", id: false, force: true do |t|
+    t.string  "access_token",       limit: 140
+    t.integer "finance_manager_id"
+    t.integer "user_id"
+  end
+
+  create_table "finance_managers", force: true do |t|
+    t.string   "name",        limit: 100, null: false
+    t.string   "description", limit: 140
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "operation_types", force: true do |t|
+    t.string   "name",        limit: 55,  null: false
+    t.string   "description", limit: 140
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "transaction_types", force: true do |t|
+    t.string   "name",        limit: 55,  null: false
+    t.string   "description", limit: 140
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "transactions", force: true do |t|
+    t.float    "value"
+    t.string   "date"
+    t.string   "involved_person",            null: false
+    t.integer  "transaction_type_id"
+    t.integer  "operation_type_id"
+    t.integer  "finance_manager_session_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "transactions", ["finance_manager_session_id"], name: "index_transactions_on_finance_manager_session_id", using: :btree
+  add_index "transactions", ["operation_type_id"], name: "index_transactions_on_operation_type_id", using: :btree
+  add_index "transactions", ["transaction_type_id"], name: "index_transactions_on_transaction_type_id", using: :btree
+
+  create_table "users", force: true do |t|
+    t.string   "email",      limit: 55, null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

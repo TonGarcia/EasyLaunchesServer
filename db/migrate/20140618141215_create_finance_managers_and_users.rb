@@ -1,4 +1,4 @@
-class CreateUsers < ActiveRecord::Migration
+class CreateFinanceManagersAndUsers < ActiveRecord::Migration
   def change
     create_table :users do |t|
       t.string :email, limit: 55, unique: true, null: false

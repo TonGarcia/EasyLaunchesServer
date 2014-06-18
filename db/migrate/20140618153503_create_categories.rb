@@ -1,6 +1,6 @@
-class CreateOperationTypes < ActiveRecord::Migration
+class CreateCategories < ActiveRecord::Migration
   def change
-    create_table :operation_types do |t|
+    create_table :categories do |t|
       t.string :name, limit: 55, null: false
       t.string :description, limit: 140, null: true
 
