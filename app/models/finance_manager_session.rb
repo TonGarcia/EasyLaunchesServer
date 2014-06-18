@@ -1,4 +1,5 @@
 class FinanceManagerSession < ActiveRecord::Base
-  belongs_to :finance_manager
   belongs_to :user
+  belongs_to :finance_manager
+  has_many :transactions
 end
