@@ -14,10 +14,12 @@ class CreateFinanceManagersAndUsers < ActiveRecord::Migration
       t.timestamps
     end
 
-    create_table :finance_manager_sessions, id: false do |t|
+    create_table :finance_manager_sessions do |t|
       t.string :access_token, limit: 140, null: true
       t.belongs_to :finance_manager
       t.belongs_to :user
+
+      t.timestamps
     end
   end
 end
