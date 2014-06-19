@@ -9,10 +9,9 @@ module REMOTE_API
 
     # Authenticate the user
     def auth_user
-      # POST https://zeropaper.com.br/api/v1/auth/create
       uri = URI.parse('https://zeropaper.com.br/api/v1/auth/create')
-      request = Net::HTTP::Post.new(uri.path, {'Content-Type' =>'application/json'})
-      request.body = data.to_json
+      res = Net::HTTP.post_form(uri, {email: 'ilton_unb@hotmail.com', password: 'u5ga6f123'})
+      res.body
     end
 
     # Return if the user was correctly created
