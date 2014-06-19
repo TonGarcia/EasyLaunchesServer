@@ -11,12 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140618150221) do
+ActiveRecord::Schema.define(version: 20140618205916) do
 
-  create_table "finance_manager_sessions", id: false, force: true do |t|
-    t.string  "access_token",       limit: 140
-    t.integer "finance_manager_id"
-    t.integer "user_id"
+  create_table "audits", force: true do |t|
+    t.string   "status",         limit: 45, null: false
+    t.string   "remote_return",  limit: 5,  null: false
+    t.integer  "transaction_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "audits", ["transaction_id"], name: "index_audits_on_transaction_id", using: :btree
+
+  create_table "finance_manager_sessions", force: true do |t|
+    t.string   "access_token",       limit: 140
+    t.integer  "finance_manager_id"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "finance_managers", force: true do |t|
