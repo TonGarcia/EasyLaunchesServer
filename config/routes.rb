@@ -1,6 +1,19 @@
 Rails.application.routes.draw do
   root to: 'landing_page#index'
 
+  namespace :api do
+    # API routes for our MobileApps POST
+    scope '/transactions' do
+      post '/create' => 'transactions#create'
+    end
+
+    # API routes for Clients GET (business partners whose we do not implment POSTs)
+    scope '/clients' do
+
+    end
+  end
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
