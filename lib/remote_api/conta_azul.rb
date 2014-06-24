@@ -4,5 +4,20 @@ module REMOTE_API
     public_class_method :do_login
     public_class_method :connected?
     public_class_method :send_launches
+
+    # Try to login on the remote
+    def do_login email, password
+
+    end
+
+    # Return true if success on remote
+    def connected?
+
+    end
+
+    # If connected send the values to the remote as the current_user
+    def send_launches
+
+    end
   end
 end
