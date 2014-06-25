@@ -304,42 +304,58 @@
         1,
         null
       ],
-      "/Users/TonGarcia/Documents/projs/rails/EasyLaunchesServer/app/controllers/landing_page_controller.rb": [
+      "/Users/TonGarcia/Documents/projs/rails/EasyLaunchesServer/lib/remote_api/zero_paper.rb": [
+        1,
+        null,
+        1,
+        1,
         1,
         1,
         null,
-        1,
         null,
-        null,
-        1,
         1,
         0,
         0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
         null,
         null
       ],
-      "/Users/TonGarcia/Documents/projs/rails/EasyLaunchesServer/app/controllers/application_controller.rb": [
-        1,
-        null,
-        null,
-        1,
-        null
-      ],
-      "/Users/TonGarcia/Documents/projs/rails/EasyLaunchesServer/spec/controllers/transactions_controller_spec.rb": [
+      "/Users/TonGarcia/Documents/projs/rails/EasyLaunchesServer/lib/remote_api/finance_manager.rb": [
         1,
         null,
         1,
         null,
-        0,
-        0,
-        0,
-        0,
+        1,
+        1,
+        1,
         null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
         null,
         null,
         null
       ]
     },
-    "timestamp": 1403539704
+    "timestamp": 1403641891
   }
 }
