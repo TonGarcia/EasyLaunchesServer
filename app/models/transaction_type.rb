@@ -1,3 +1,3 @@
-class TransactionType < ActiveRecord::Base
-  has_many :transactions
+gclass TransactionType < ActiveRecord::Base
+  has_many :financial_transactions
 end
