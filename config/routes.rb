@@ -7,8 +7,12 @@ Rails.application.routes.draw do
       post '/create' => 'transactions#create'
     end
 
+    scope '/finance_managers' do
+      get '' => 'finance_manager#all'
+    end
+
     # API routes for Clients GET (business partners whose we do not implment POSTs)
-    scope '/clients' do
+    scope '/partner_client' do
 
     end
   end
